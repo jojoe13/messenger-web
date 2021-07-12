@@ -1,0 +1,157 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.mainBox-1 {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.headerBox {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.logoBox {
+  width: 40px;
+  height: 40px;
+  margin-left: 5%;
+}
+.logo {
+  width: 100%;
+}
+.menuBox {
+  margin-right: 5%;
+}
+.menuItem {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 50px;
+  margin: 0 15px;
+}
+
+.menuItem:hover {
+  border-bottom-style: solid;
+}
+h1 {
+  font-size: 65px;
+  font-weight: 450;
+}
+.description {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.blockElement {
+  display: block;
+  background-color: #e8f0fe;
+  border: none;
+  border-radius: 10px;
+  height: 36px;
+  box-sizing: border-box;
+  padding: 15px 15px;
+  outline: none;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#botton {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #0084ff;
+  border-radius: 24px;
+  border: none;
+  color: white;
+  padding: 2px 20px;
+  height: 40px;
+}
+.forgetPassword {
+  display: inherit;
+  color: #0a7cff;
+  font-size: 16px;
+  margin-bottom: 26px;
+  text-decoration: underline;
+}
+.checkBox {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.forgetPassword {
+  margin-bottom: 20px;
+}
+.storeBox {
+  margin-top: 30px;
+}
+.mainBox-2{
+  display: flex;
+  flex-wrap: wrap;
+}
+.leftBox{
+  display: inline-block;
+  width: 40%;
+}
+
+.rightBox{
+  display: inline-block;
+  width: 60%;
+  text-align: right;
+}
+
+.appStoreLogo {
+  width: auto;
+  height: 44px;
+  margin-right: 12px;
+}
+.microsoftStoreLogo {
+  width: auto;
+  height: 44px;
+}
+.rightImage {
+  width: 85%;
+  margin-top: 30px;
+}
+.mobileMenuBox{
+  display: none;
+  margin-right: 5%;
+}
+
+@media (max-width: 1023px) {
+  .menuBox {
+    display: none;
+  }
+  .mobileMenuBox {
+    display: block;
+  }
+  .leftBox {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .rightBox {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+  .rightImage {
+    margin: 0 -50%;
+  }
+  .leftInnerBox{
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 375px) {
+  .leftInnerBox {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
